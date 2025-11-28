@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GHU_CSD_PORTFOLIO/static/css/main.7b128b07.css",
+    "main.js": "/GHU_CSD_PORTFOLIO/static/js/main.3bd81dde.js",
+    "index.html": "/GHU_CSD_PORTFOLIO/index.html",
+    "main.7b128b07.css.map": "/GHU_CSD_PORTFOLIO/static/css/main.7b128b07.css.map",
+    "main.3bd81dde.js.map": "/GHU_CSD_PORTFOLIO/static/js/main.3bd81dde.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b128b07.css",
+    "static/js/main.3bd81dde.js"
+  ]
+}
