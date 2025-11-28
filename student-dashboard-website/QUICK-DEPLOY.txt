@@ -1,0 +1,58 @@
+═══════════════════════════════════════════════════════════
+    🚀 GITHUB PAGES - QUICK DEPLOYMENT (10 MINUTES)
+═══════════════════════════════════════════════════════════
+
+STEP 1: Download Files
+├─ Location: /app/student-dashboard-website/
+└─ Download entire folder to your computer
+
+STEP 2: Create Repository
+├─ Go to: https://github.com/new
+├─ Name: student-dashboard-presentation
+├─ Visibility: ✓ Public
+├─ Initialize: ☐ Leave all unchecked
+└─ Click: "Create repository"
+
+STEP 3: Upload Files
+├─ Click: "uploading an existing file"
+├─ Drag: ALL files and folders
+├─ Commit message: "Initial commit"
+└─ Click: "Commit changes"
+
+STEP 4: Enable Pages
+├─ Go to: Settings → Pages
+├─ Source: Deploy from a branch
+├─ Branch: main, folder: / (root)
+└─ Click: "Save"
+
+STEP 5: Access Website
+├─ Wait: 2-3 minutes
+├─ Copy: URL shown (username.github.io/repo-name)
+└─ Share: With your team!
+
+═══════════════════════════════════════════════════════════
+
+YOUR URL: https://[username].github.io/[repo-name]/
+
+Example: https://harisivasaiteja.github.io/student-dashboard-presentation/
+
+═══════════════════════════════════════════════════════════
+
+IMPORTANT:
+✓ Repository must be PUBLIC
+✓ Upload ALL files including images/ folder
+✓ Wait 2-3 minutes for build to complete
+✓ Test all pages after deployment
+
+═══════════════════════════════════════════════════════════
+
+TROUBLESHOOTING:
+• 404 Error? → Wait longer, clear cache
+• Images missing? → Check images/ folder uploaded
+• Styles broken? → Clear cache, try incognito mode
+
+═══════════════════════════════════════════════════════════
+
+Need detailed guide? See: GITHUB-DEPLOYMENT-GUIDE.md
+
+═══════════════════════════════════════════════════════════
