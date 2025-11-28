@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appendix & Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root{--color-primary:#0d9488;--color-secondary:#1e3a8a;--color-accent:#06b6d4;--color-bg:#ffffff;--color-bg-secondary:#f8fafc;--color-text:#1e293b;--color-text-light:#64748b;--color-border:#e2e8f0;--spacing-xs:.5rem;--spacing-sm:1rem;--spacing-md:1.5rem;--spacing-lg:2rem;--spacing-xl:3rem;--spacing-2xl:4rem;--radius-sm:.5rem;--radius-md:.75rem;--radius-lg:1rem;--shadow-sm:0 1px 2px 0 rgba(0,0,0,.05);--shadow-md:0 4px 6px -1px rgba(0,0,0,.1);--shadow-lg:0 10px 15px -3px rgba(0,0,0,.1)}.dark-mode{--color-bg:#0f172a;--color-bg-secondary:#1e293b;--color-text:#f1f5f9;--color-text-light:#94a3b8;--color-border:#334155}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--color-bg);color:var(--color-text);line-height:1.6;transition:background .3s,color .3s}h1,h2,h3,h4{font-family:Poppins,sans-serif;line-height:1.2}nav{position:sticky;top:0;background:var(--color-bg);border-bottom:1px solid var(--color-border);z-index:1000;backdrop-filter:blur(10px)}.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:var(--spacing-sm) var(--spacing-md)}.nav-brand{font-size:1.25rem;font-weight:700;color:var(--color-primary);text-decoration:none}.nav-links{display:flex;list-style:none;gap:var(--spacing-md);align-items:center}.nav-links a{color:var(--color-text);text-decoration:none;font-weight:500;padding:var(--spacing-xs) var(--spacing-sm);border-radius:var(--radius-sm);transition:all .3s}.nav-links a.active,.nav-links a:hover{color:var(--color-primary);background:var(--color-bg-secondary)}.dark-toggle{background:var(--color-bg-secondary);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--spacing-xs) var(--spacing-sm);cursor:pointer;font-size:1.2rem}.container{max-width:1200px;margin:0 auto;padding:var(--spacing-2xl) var(--spacing-md)}.page-title{font-size:3rem;font-weight:700;text-align:center;margin-bottom:var(--spacing-md);background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent}.page-subtitle{font-size:1.25rem;color:var(--color-text-light);text-align:center;margin-bottom:var(--spacing-2xl)}.resource-section{background:var(--color-bg-secondary);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--spacing-xl);margin-bottom:var(--spacing-lg)}.resource-section h2{color:var(--color-primary);margin-bottom:var(--spacing-md);font-size:2rem}.resource-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--spacing-md);margin-top:var(--spacing-md)}.resource-card{background:var(--color-bg);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--spacing-md);transition:all .3s}.resource-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--color-primary)}.resource-card h4{color:var(--color-text);margin-bottom:var(--spacing-xs)}.resource-card p{color:var(--color-text-light);font-size:.875rem;margin-bottom:var(--spacing-sm)}.resource-link{display:inline-block;background:linear-gradient(135deg,var(--color-primary),var(--color-accent));color:#fff;padding:var(--spacing-xs) var(--spacing-md);border-radius:var(--radius-sm);text-decoration:none;font-weight:600;transition:all .3s}.resource-link:hover{transform:translateX(3px)}.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--spacing-md)}.team-member{text-align:center;padding:var(--spacing-md);background:var(--color-bg);border-radius:var(--radius-md);border:1px solid var(--color-border)}.team-avatar{width:80px;height:80px;background:linear-gradient(135deg,var(--color-primary),var(--color-accent));color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:700;margin:0 auto var(--spacing-sm)}.team-member h4{color:var(--color-text);font-size:1rem}footer{background:var(--color-bg-secondary);border-top:1px solid var(--color-border);padding:var(--spacing-xl) var(--spacing-md);margin-top:var(--spacing-2xl)}.footer-content{max-width:1200px;margin:0 auto;text-align:center}.footer-bottom{margin-top:var(--spacing-lg);padding-top:var(--spacing-lg);border-top:1px solid var(--color-border);color:var(--color-text-light)}.mobile-menu-toggle{display:none;background:0 0;border:none;font-size:1.5rem;cursor:pointer;color:var(--color-text)}@media (max-width:768px){.page-title{font-size:2rem}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--color-bg);flex-direction:column;padding:var(--spacing-md)}.nav-links.active{display:flex}.mobile-menu-toggle{display:block}.resource-grid,.team-grid{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="./index.html" class="nav-brand">CSD Project</a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./problem.html">Problem</a></li>
+                <li><a href="./research.html">Research</a></li>
+                <li><a href="./solution.html">Solution</a></li>
+                <li><a href="./architecture.html">Architecture</a></li>
+                <li><a href="./data.html">Data</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./ethics.html">Ethics</a></li>
+                <li><a href="./lessons.html">Lessons</a></li>
+                <li><a href="./appendix.html" class="active">Appendix</a></li>
+                <li><button class="dark-toggle" onclick="toggleDarkMode()">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Appendix & Resources</h1>
+        <p class="page-subtitle">Project links, team information, and additional materials</p>
+
+        <div class="resource-section">
+            <h2>Project Links</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>🚀 Live Dashboard</h4>
+                    <p>Interactive web application with full functionality</p>
+                    <a href="https://harisivasaiteja.github.io/Studentdashboard/" target="_blank" class="resource-link">View Dashboard →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-section">
+            <h2>Team Members - Group 20 (QuadraMind)</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-avatar">SM</div>
+                    <h4>Shashank Manchikatla</h4>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">HM</div>
+                    <h4>Hari Siva Sai Teja Mogali</h4>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">MP</div>
+                    <h4>Manindra Porandla</h4>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">MT</div>
+                    <h4>Manohar Naidu Talari</h4>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">ST</div>
+                    <h4>Sandeep Thota</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-section">
+            <h2>Technology Stack</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>Frontend</h4>
+                    <p>React 19.0, Chart.js, React Context API, Responsive Design</p>
+                </div>
+                <div class="resource-card">
+                    <h4>Backend</h4>
+                    <p>FastAPI, Python, Async/Await, Pydantic Models</p>
+                </div>
+                <div class="resource-card">
+                    <h4>Database</h4>
+                    <p>MongoDB, NoSQL, Aggregation Pipelines, 3NF Normalization</p>
+                </div>
+                <div class="resource-card">
+                    <h4>Deployment</h4>
+                    <p>GitHub Pages, Scalable Cloud Infrastructure</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-section">
+            <h2>Key Metrics Summary</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>Retention Rate</h4>
+                    <p><strong>70.9%</strong> baseline established</p>
+                </div>
+                <div class="resource-card">
+                    <h4>At-Risk Students</h4>
+                    <p><strong>291</strong> identified (29.1%)</p>
+                </div>
+                <div class="resource-card">
+                    <h4>Average GPA</h4>
+                    <p><strong>2.77</strong> across all students</p>
+                </div>
+                <div class="resource-card">
+                    <h4>Data Retrieval</h4>
+                    <p><strong>40%</strong> faster than manual methods</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-md);">Contact Information</h3>
+            <p>Horizon State University | Group 20 - QuadraMind</p>
+            <p style="margin-top: var(--spacing-sm);">Centralized Student Dashboard Project</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Group 20 - QuadraMind. Last Updated: January 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDarkMode(){document.body.classList.toggle('dark-mode');const e=document.body.classList.contains('dark-mode');localStorage.setItem('darkMode',e);document.querySelector('.dark-toggle').textContent=e?'☀️':'🌙'}localStorage.getItem('darkMode')==='true'&&(document.body.classList.add('dark-mode'),document.querySelector('.dark-toggle').textContent='☀️');function toggleMobileMenu(){document.getElementById('navLinks').classList.toggle('active')}const currentPage=window.location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.nav-links a').forEach(e=>{e.getAttribute('href').includes(currentPage)&&e.classList.add('active')});
+    </script>
+</body>
+</html>
