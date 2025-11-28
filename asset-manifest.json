@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/GHU_CSD_PORTFOLIO/static/css/main.7b128b07.css",
-    "main.js": "/GHU_CSD_PORTFOLIO/static/js/main.3bd81dde.js",
+    "main.css": "/GHU_CSD_PORTFOLIO/static/css/main.29f6618f.css",
+    "main.js": "/GHU_CSD_PORTFOLIO/static/js/main.90c8f6ec.js",
     "index.html": "/GHU_CSD_PORTFOLIO/index.html",
-    "main.7b128b07.css.map": "/GHU_CSD_PORTFOLIO/static/css/main.7b128b07.css.map",
-    "main.3bd81dde.js.map": "/GHU_CSD_PORTFOLIO/static/js/main.3bd81dde.js.map"
+    "main.29f6618f.css.map": "/GHU_CSD_PORTFOLIO/static/css/main.29f6618f.css.map",
+    "main.90c8f6ec.js.map": "/GHU_CSD_PORTFOLIO/static/js/main.90c8f6ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b128b07.css",
-    "static/js/main.3bd81dde.js"
+    "static/css/main.29f6618f.css",
+    "static/js/main.90c8f6ec.js"
   ]
 }
