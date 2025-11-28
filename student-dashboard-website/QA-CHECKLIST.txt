@@ -1,0 +1,194 @@
+# QUALITY ASSURANCE CHECKLIST
+Pre-Launch Testing for Centralized Student Dashboard Website
+
+═══════════════════════════════════════════════════════════════
+ACCESSIBILITY CHECKS
+═══════════════════════════════════════════════════════════════
+[ ] All images have descriptive alt text
+[ ] Heading hierarchy is logical (H1 → H2 → H3)
+[ ] Color contrast meets WCAG AA standards (4.5:1 minimum)
+[ ] Links are clearly distinguishable from regular text
+[ ] Interactive elements have hover states
+[ ] Keyboard navigation works (Tab key moves through elements)
+[ ] Dark mode toggle accessible via keyboard
+[ ] Mobile menu accessible on touch devices
+
+═══════════════════════════════════════════════════════════════
+LINKS & NAVIGATION
+═══════════════════════════════════════════════════════════════
+[ ] All 10 pages load without errors
+[ ] Navigation menu works on every page
+[ ] Current page highlighted in nav (active state)
+[ ] Footer links functional across all pages
+[ ] Live dashboard link works: https://harisivasaiteja.github.io/Studentdashboard/
+[ ] External links open in new tabs (target="_blank")
+[ ] Internal links use relative paths (./pagename.html)
+[ ] Mobile hamburger menu expands/collapses properly
+
+═══════════════════════════════════════════════════════════════
+RESPONSIVE DESIGN
+═══════════════════════════════════════════════════════════════
+Desktop (1920px+):
+[ ] Layout uses full width appropriately (max 1200px container)
+[ ] Navigation bar displays all links horizontally
+[ ] Grid layouts show multiple columns
+[ ] Images scale properly without distortion
+
+Tablet (768px - 1024px):
+[ ] Grid layouts adapt to 2 columns or adjust
+[ ] Navigation remains functional
+[ ] Text remains readable (no overflow)
+[ ] Touch targets are at least 44x44px
+
+Mobile (< 768px):
+[ ] Navigation collapses to hamburger menu
+[ ] Hamburger menu opens/closes smoothly
+[ ] Grid layouts become single column
+[ ] Text font sizes remain legible
+[ ] Images scale to fit screen width
+[ ] No horizontal scrolling required
+[ ] Buttons/CTAs easy to tap with thumb
+
+═══════════════════════════════════════════════════════════════
+IMAGES & MEDIA
+═══════════════════════════════════════════════════════════════
+[ ] All images load correctly (no broken image icons)
+[ ] Architecture diagram present in /images/architecture-diagram.png
+[ ] ER diagram present in /images/er-diagram.png
+[ ] Dashboard screenshots present (dashboard-main.png, dashboard-profile.png)
+[ ] Image file sizes optimized (<500KB each)
+[ ] Images have proper file extensions (.png, .jpg)
+[ ] Lightbox opens when clicking diagrams
+[ ] Lightbox closes when clicking outside image
+[ ] Image captions are clear and descriptive
+
+═══════════════════════════════════════════════════════════════
+DARK MODE
+═══════════════════════════════════════════════════════════════
+[ ] Dark mode toggle button visible on all pages
+[ ] Toggle switches between light/dark modes
+[ ] Dark mode preference persists on page reload
+[ ] Dark mode preference persists across pages
+[ ] Toggle icon changes (🌙 → ☀️)
+[ ] All text readable in dark mode
+[ ] Borders/dividers visible in dark mode
+[ ] Images/diagrams visible in dark mode
+[ ] No color contrast issues in dark mode
+
+═══════════════════════════════════════════════════════════════
+CONTENT ACCURACY
+═══════════════════════════════════════════════════════════════
+[ ] Executive Summary matches project report
+[ ] All statistics accurate (70.9% retention, 291 at-risk, etc.)
+[ ] Team member names spelled correctly:
+    - Shashank Manchikatla
+    - Hari Siva Sai Teja Mogali
+    - Manindra Porandla
+    - Manohar Naidu Talari
+    - Sandeep Thota
+[ ] Dashboard link correct
+[ ] Technology stack details accurate
+[ ] Risk algorithm weights correct (40/30/20/10)
+[ ] "Last Updated" date current in footer
+
+═══════════════════════════════════════════════════════════════
+PERFORMANCE
+═══════════════════════════════════════════════════════════════
+[ ] Pages load in under 3 seconds (on average connection)
+[ ] No console errors in browser DevTools
+[ ] CSS/JS inline (no external dependencies failing)
+[ ] Google Fonts loading correctly
+[ ] No render-blocking resources
+[ ] Smooth scrolling and animations
+[ ] Hover effects smooth (no lag)
+[ ] Mobile performance acceptable
+
+═══════════════════════════════════════════════════════════════
+BROWSER COMPATIBILITY
+═══════════════════════════════════════════════════════════════
+Test in:
+[ ] Google Chrome (latest version)
+[ ] Mozilla Firefox (latest version)
+[ ] Safari (latest version)
+[ ] Microsoft Edge (latest version)
+[ ] Mobile Safari (iOS)
+[ ] Mobile Chrome (Android)
+
+Check for:
+[ ] Layout consistent across browsers
+[ ] Fonts rendering correctly
+[ ] Colors displaying accurately
+[ ] Animations working smoothly
+[ ] JavaScript features functional
+
+═══════════════════════════════════════════════════════════════
+DEPLOYMENT READINESS (GitHub Pages)
+═══════════════════════════════════════════════════════════════
+[ ] All files in correct directory structure
+[ ] index.html in root directory
+[ ] /images/ folder in root directory
+[ ] No absolute file paths (all relative)
+[ ] README.md included
+[ ] No sensitive data exposed (API keys, passwords)
+[ ] Repository set to public (if using GitHub Pages)
+[ ] GitHub Pages enabled in repo settings
+[ ] Custom domain configured (if applicable)
+
+═══════════════════════════════════════════════════════════════
+USER EXPERIENCE
+═══════════════════════════════════════════════════════════════
+[ ] First impression is professional and polished
+[ ] Purpose of site clear within 5 seconds
+[ ] Navigation intuitive (users can find what they need)
+[ ] Content scannable (headings, bullets, short paragraphs)
+[ ] Call-to-action buttons prominent ("Open Dashboard")
+[ ] No typos or grammatical errors
+[ ] Visual hierarchy clear (headings stand out)
+[ ] Whitespace used effectively (not cramped)
+
+═══════════════════════════════════════════════════════════════
+FINAL CHECKS BEFORE PRESENTATION
+═══════════════════════════════════════════════════════════════
+[ ] Test on presentation device/projector
+[ ] Test internet connection at venue
+[ ] Bookmark live dashboard URL
+[ ] Have backup screenshots ready
+[ ] Print presentation script
+[ ] Assign speaker page navigation responsibilities
+[ ] Run through complete presentation flow
+[ ] Prepare answers for potential Q&A
+
+═══════════════════════════════════════════════════════════════
+COMMON ISSUES & SOLUTIONS
+═══════════════════════════════════════════════════════════════
+
+Issue: Images not loading
+Solution: Check file paths are relative (./images/file.png), verify files exist
+
+Issue: Dark mode not persisting
+Solution: Check browser localStorage enabled, try clearing cache
+
+Issue: Mobile menu not working
+Solution: Verify JavaScript loaded, check for console errors
+
+Issue: Layout broken on mobile
+Solution: Test viewport meta tag, check media queries
+
+Issue: GitHub Pages not updating
+Solution: Clear GitHub cache, wait 5-10 minutes, force refresh (Ctrl+Shift+R)
+
+Issue: Fonts not loading
+Solution: Check internet connection (Google Fonts require online access)
+
+═══════════════════════════════════════════════════════════════
+
+Last QA Run Date: _____________
+Tester Name: _____________
+All Checks Passed: [ ] Yes [ ] No
+
+Notes:
+_________________________________________________________________
+_________________________________________________________________
+_________________________________________________________________
+
+═══════════════════════════════════════════════════════════════

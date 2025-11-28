@@ -1,0 +1,180 @@
+# 5-MINUTE PRESENTATION SCRIPT
+Centralized Student Dashboard - Group 20 (QuadraMind)
+5 Speakers, ~1 minute each
+
+═══════════════════════════════════════════════════════════════
+
+SPEAKER 1: SHASHANK MANCHIKATLA (0:30) - Problem Introduction
+═══════════════════════════════════════════════════════════════
+
+[Navigate to problem.html]
+
+Good [morning/afternoon], I'm Shashank. Today we're presenting the Centralized 
+Student Dashboard for Horizon State University.
+
+THE PROBLEM:
+• HSU faced below-average retention due to fragmented data systems
+• Academic advisors spent 15-20 minutes per student manually querying separate 
+  systems for academic, financial, and housing data
+• No early warning system existed - interventions were reactive, not proactive
+• Different departments used inconsistent risk assessment criteria
+
+This data fragmentation prevented advisors from identifying at-risk students 
+before they fell behind.
+
+[Transition]: "Our team developed a comprehensive solution. Hari will explain..."
+
+
+═══════════════════════════════════════════════════════════════
+
+SPEAKER 2: HARI SIVA SAI TEJA MOGALI (1:00) - Solution Overview
+═══════════════════════════════════════════════════════════════
+
+[Navigate to solution.html]
+
+Thanks Shashank. I'm Hari. We built the Centralized Student Dashboard - 
+a full-stack web application that consolidates all student data into one 
+actionable platform.
+
+KEY FEATURES:
+• Student 360° Profile: Unified view combining academic, financial, housing, 
+  and engagement data
+• Multi-factor Risk Assessment: Algorithm weighing GPA (40%), Attendance (30%), 
+  Engagement (20%), and Financial status (10%)
+• Pulse Tracker: Prioritized caseload view for advisors
+• Real-time Dashboard: Institutional KPIs and department comparisons
+
+TECHNOLOGY STACK:
+• React 19.0 frontend for responsive UI
+• FastAPI backend for high-speed async processing  
+• MongoDB database for flexible schema management
+
+Our solution shifts advising from reactive remediation to proactive support.
+
+[Transition]: "Manindra will explain our data architecture..."
+
+
+═══════════════════════════════════════════════════════════════
+
+SPEAKER 3: MANINDRA PORANDLA (1:00) - Data Design
+═══════════════════════════════════════════════════════════════
+
+[Navigate to data.html]
+
+I'm Manindra. Let me walk through our data design.
+
+DATASET OVERVIEW:
+• 1,000 synthetic student records across 6 normalized entities
+• Entities: Students, Financials, Housing, Enrollments, Courses, Advisors/Alerts
+• Student_ID serves as the Foreign Key linking all entities
+• Normalized to Third Normal Form (3NF) to eliminate redundancy
+
+[Point to ER Diagram on screen]
+
+DATA GENERATION METHODOLOGY:
+• Created programmatically using Python (pandas + faker)
+• Realistic distributions: Average GPA 2.77, varied attendance and engagement
+• Intentional correlations: Students with low GPA (≤2.5) have higher probability 
+  of large outstanding balances
+• This correlation testing was essential for validating our risk algorithm
+
+[Transition]: "Now Manohar will show you the live dashboard and key insights..."
+
+
+═══════════════════════════════════════════════════════════════
+
+SPEAKER 4: MANOHAR NAIDU TALARI (2:00) - Dashboard Demo & Insights
+═══════════════════════════════════════════════════════════════
+
+[Navigate to dashboard.html, then OPEN live dashboard in new tab]
+
+Thanks Manindra. I'm Manohar, and I'll walk you through our live dashboard.
+
+[Show live dashboard: https://harisivasaiteja.github.io/Studentdashboard/]
+
+DASHBOARD FEATURES:
+• KPI Cards showing Retention Rate (70.9%), Average GPA (2.77), and 
+  At-Risk Students (291)
+• Interactive charts tracking GPA trends across departments
+• Engagement and housing distribution analytics
+
+[Point to specific charts on screen]
+
+KEY DATA INSIGHTS:
+• 29.1% of students identified as at-risk - that's 291 students needing support
+• Engineering and Computer Science outperform Psychology and Mathematics in GPA
+• Financial stress matters: Students with debt >$15K face DOUBLE the dropout risk
+• Scholarships work: They increase retention by 33 percentage points
+• Housing impact: On-campus students have 18% higher retention
+• Engagement threshold: Scores below 50 predict GPA decline
+
+STAKEHOLDER IMPACT:
+• Academic Advisors use 360° profiles for personalized early outreach
+• Department Chairs leverage performance data to redesign courses
+• Financial Aid Officers target students at risk with strategic aid
+• Leadership uses trend data for accreditation and strategic planning
+
+This dashboard enables data-driven decisions instead of reactive interventions.
+
+[Transition]: "Finally, Sandeep will share our lessons learned..."
+
+
+═══════════════════════════════════════════════════════════════
+
+SPEAKER 5: SANDEEP THOTA (0:30) - Lessons Learned & Conclusion
+═══════════════════════════════════════════════════════════════
+
+[Navigate to lessons.html]
+
+I'm Sandeep. Let me share key lessons from this project:
+
+LESSONS LEARNED:
+• Data integration takes TIME - we allocated 40% of development to this phase
+• Prioritize value: We focused on MVP features (risk ID + profiles) first, 
+  deferred complex automation
+• Tech choices matter: Our pivot to React/FastAPI/MongoDB provided better 
+  scalability and performance
+
+[Navigate to appendix.html]
+
+NEXT STEPS:
+• Production security: JWT authentication and role-based access control
+• ML integration: Replace static algorithm with dynamic model trained on 
+  historical data
+• Action logging: Track advisor interventions and student progress
+• Mobile app development for on-the-go access
+
+CONCLUSION:
+We've established a 70.9% retention baseline, identified 291 at-risk students, 
+and achieved 40% faster data retrieval. This prototype demonstrates how 
+predictive analytics can transform student support from reactive to proactive.
+
+Thank you! We're happy to take questions.
+
+[End - Stand ready for Q&A]
+
+
+═══════════════════════════════════════════════════════════════
+TIMING BREAKDOWN:
+═══════════════════════════════════════════════════════════════
+Speaker 1 (Shashank)  - Problem:         0:30
+Speaker 2 (Hari)      - Solution:        1:00
+Speaker 3 (Manindra)  - Data Design:     1:00
+Speaker 4 (Manohar)   - Dashboard:       2:00
+Speaker 5 (Sandeep)   - Lessons/Wrap:    0:30
+─────────────────────────────────────────────
+TOTAL:                                   5:00
+
+
+═══════════════════════════════════════════════════════════════
+PRESENTATION TIPS:
+═══════════════════════════════════════════════════════════════
+1. Practice transitions between speakers - keep them smooth and brief
+2. Speaker 4 should pre-load the live dashboard in a separate tab
+3. Point to specific elements on screen when referencing data
+4. Maintain eye contact with audience, not just the screen
+5. Use the website as your visual aid - don't read directly from slides
+6. Have backup plan if live dashboard doesn't load (use screenshots)
+7. Designate one person to advance pages if presenting together
+
+═══════════════════════════════════════════════════════════════
